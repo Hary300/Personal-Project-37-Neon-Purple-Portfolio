@@ -12,18 +12,25 @@ export interface SkillItem {
   percentage: number;
 }
 
-export interface OrbitTechItem {
+export interface OrbitTech {
   id: string;
   name: string;
-  icon: string;
-  orbitLevel: number;
-  positionAngle?: number;
+  logo: string;
+}
+
+export interface OrbitTechItem {
+  redux: OrbitTech;
+  js: OrbitTech;
+  ts: OrbitTech;
+  css: OrbitTech;
+  html: OrbitTech;
+  react: OrbitTech;
 }
 
 export interface SkillsData {
   header: HeaderData;
   skills: SkillItem[];
-  orbitTechData: OrbitTechItem[];
+  orbitTechData: OrbitTechItem;
 }
 
 export const skillsData: SkillsData = {
@@ -64,48 +71,37 @@ export const skillsData: SkillsData = {
       percentage: 70,
     },
   ],
-  orbitTechData: [
-    {
+  orbitTechData: {
+    redux: {
       id: 'tech-1',
       name: 'Redux',
-      icon: redux,
-      orbitLevel: 1,
-      positionAngle: 45,
+      logo: redux,
     },
-    {
+
+    js: {
       id: 'tech-2',
       name: 'JavaScript',
-      icon: js,
-      orbitLevel: 2,
-      positionAngle: 180,
+      logo: js,
     },
-    {
+    ts: {
       id: 'tech-3',
       name: 'TypeScript',
-      icon: ts,
-      orbitLevel: 2,
-      positionAngle: 315,
+      logo: ts,
     },
-    {
+    html: {
       id: 'tech-4',
       name: 'HTML5',
-      icon: html,
-      orbitLevel: 3,
-      positionAngle: 90,
+      logo: html,
     },
-    {
+    css: {
       id: 'tech-5',
       name: 'CSS3',
-      icon: css,
-      orbitLevel: 3,
-      positionAngle: 30,
+      logo: css,
     },
-    {
+    react: {
       id: 'tech-6',
       name: 'React',
-      icon: react,
-      orbitLevel: 3,
-      positionAngle: 225,
+      logo: react,
     },
-  ],
+  },
 };
