@@ -51,8 +51,8 @@ export default function TestimonialMarquee() {
           <ReviewCard key={review.name} {...review} />
         ))}
       </Marquee>
-      <div className='from-background pointer-events-none absolute inset-y-0 left-0 w-[5%] bg-linear-to-r'></div>
-      <div className='from-background pointer-events-none absolute inset-y-0 right-0 w-[5%] bg-linear-to-l'></div>
+      <div className='hidden sm:block from-background pointer-events-none absolute inset-y-0 left-0 w-[20%] bg-linear-to-r'></div>
+      <div className='hidden sm:block from-background pointer-events-none absolute inset-y-0 right-0 w-[20%] bg-linear-to-l'></div>
     </div>
   );
 }
