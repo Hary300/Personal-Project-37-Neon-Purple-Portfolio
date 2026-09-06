@@ -193,8 +193,8 @@
 
   --background-image-horizontal-gradient-purple-pink: linear-gradient(
     90deg,
-    #8746eb,
-    #dc49a6
+    #dc49a6,
+    #8746eb
   );
 
   --background-image-vertical-gradient-purple-pink: linear-gradient(

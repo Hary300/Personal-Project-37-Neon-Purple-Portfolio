@@ -1,4 +1,5 @@
 import { cva, type VariantProps } from 'class-variance-authority';
+import { cn } from 'cn';
 
 const blurCircleVariants = cva('rounded-full blur-[725.2px]', {
   variants: {
@@ -14,10 +15,14 @@ const blurCircleVariants = cva('rounded-full blur-[725.2px]', {
   },
 });
 
-type BlurCircleProps = VariantProps<typeof blurCircleVariants>;
+type BlurCircleProps = VariantProps<typeof blurCircleVariants> & {
+  className?: string;
+};
 
-const BlurCircle = ({ color, size }: BlurCircleProps) => {
-  return <div className={blurCircleVariants({ color, size })} />;
+const BlurCircle = ({ color, size, className }: BlurCircleProps) => {
+  return <div className={cn(blurCircleVariants({ color, size }), className)} />;
 };
 
 export default BlurCircle;
+
+// blur-[725.2px]

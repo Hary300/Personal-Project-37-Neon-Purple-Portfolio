@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <header
       className={cn(
-        'fixed max-w-360 left-1/2 -translate-x-1/2 h-16 lg:h-21 flex items-center w-full px-5 sm:px-10 lg:px-15 xl:px-30',
+        'fixed max-w-360 left-1/2 -translate-x-1/2 h-16 lg:h-21 flex items-center w-full px-5 sm:px-10 lg:px-15 xl:px-30 z-40',
         isScroll && 'backdrop-blur-2xl'
       )}
     >
