@@ -9,9 +9,9 @@ const SkillSection = () => {
   return (
     <SectionWrapper sectionId='skills' hasGap>
       <SectionTitle title={header.title} subtitle={header.subtitle} />
-      <div className='relative flex flex-col gap-6 lg:flex-row lg:justify-between lg:items-center'>
+      <div className='relative flex flex-col gap-6 lg:flex-row lg:justify-between lg:items-center lg:gap-8'>
         <TechOrbit />
-        <div className='flex flex-col gap-6 lg:gap-5 max-w-117.25 w-full'>
+        <div className='flex flex-col gap-6 lg:gap-5 lg:max-w-117.25 w-full'>
           {skills.map((skill) => (
             <div key={skill.id} className='flex flex-col gap-[6px] lg:gap-3'>
               <div className='flex justify-between items-center font-semibold text-sm lg:text-md'>
