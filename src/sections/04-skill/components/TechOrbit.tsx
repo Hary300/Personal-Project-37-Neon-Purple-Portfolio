@@ -24,9 +24,10 @@ const TechOrbit = () => {
     window.addEventListener('resize', updateRadius);
     return () => window.removeEventListener('resize', updateRadius);
   }, []);
+
   return (
-    <div className='flex justify-center items-center h-screen'>
-      <div className='h-87.5 sm:h-125 md:h-150 w-full flex items-center justify-center'>
+    <div className='flex justify-center items-center w-full'>
+      <div className='relative h-87.5 sm:h-125 md:h-150 w-full flex items-center justify-center'>
         <OrbitingCircles radius={radius.r1}>
           <TechCircle tech='redux' />
           <div className='size-2 bg-neutral-400 rounded-full' />
