@@ -66,7 +66,7 @@ const HeroSection = () => {
         />
       </div>
       <BlurCircle
-        className='absolute right-[-224.4px] bottom-0  -z-2'
+        className='absolute right-[-224.4px] bottom-0 blur-[350px] -z-2'
         color='primary'
         size='md'
       />

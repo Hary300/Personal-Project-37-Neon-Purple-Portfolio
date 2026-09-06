@@ -17,8 +17,15 @@ function App() {
       <Navbar />
       <HeroSection />
       <AboutSection />
-      <CareerSection />
-      <SkillSection />
+      <div className='relative overflow-hidden'>
+        <CareerSection />
+        <SkillSection />
+        <BlurCircle
+          className='absolute -left-37 bottom-130 -z-1 blur-[300px]'
+          color='secondary'
+          size='sm'
+        />
+      </div>
       <FaqSection />
       <ComparisonSection />
       <div className='relative overflow-hidden'>
