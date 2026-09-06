@@ -51,10 +51,9 @@ const ContactForm = () => {
 
   return (
     <>
-      <Button onClick={() => setIsOpen(true)}>test modal</Button>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className='p-4 lg:p-6 rounded-3xl lg:rounded-4xl backdrop-blur-2xl bg-white/5 w-full max-w-120 flex flex-col gap-4 lg:gap-5'
+        className='p-4 lg:p-6 rounded-3xl lg:rounded-4xl backdrop-blur-2xl bg-white/5 w-full md:max-w-120 flex flex-col gap-4 lg:gap-5'
       >
         {fields.map((field) => {
           const errorMessage = errors[field.name]?.message;
