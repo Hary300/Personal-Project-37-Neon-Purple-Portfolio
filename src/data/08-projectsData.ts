@@ -9,7 +9,6 @@ import landingPage6 from '@/assets/images/landingPage/landingPage6.webp';
 export interface ProjectItem {
   id: string;
   category: string;
-  title?: string;
   description: string;
   image: string;
   tags: string[];
