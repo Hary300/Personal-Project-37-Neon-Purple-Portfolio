@@ -1,5 +1,6 @@
 import type { IconType } from 'react-icons';
 import { FiMail } from 'react-icons/fi';
+import logo from '@/assets/images/logo.svg';
 
 type Label = 'Home' | 'About' | 'Skills' | 'Projects' | 'FAQ' | 'Contact';
 
@@ -18,7 +19,7 @@ export interface CtaButton {
 }
 
 export interface Logo {
-  icon: string;
+  logo: string;
   alt: string;
   href: '#home';
 }
@@ -31,7 +32,7 @@ export interface NavbarData {
 
 export const navbarData: NavbarData = {
   logo: {
-    icon: 'plus-icon',
+    logo: logo,
     alt: 'Logo',
     href: '#home',
   },
