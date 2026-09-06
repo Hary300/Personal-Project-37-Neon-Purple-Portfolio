@@ -2,6 +2,7 @@ import successEnvelope from '@/assets/images/modal/successEnvelope.png';
 import errorEnvelope from '@/assets/images/modal/errorEnvelope.png';
 
 export interface ModalContent {
+  status: keyof NotificationModalData;
   image: string;
   title: string;
   description: string;
@@ -15,6 +16,7 @@ export interface NotificationModalData {
 
 export const notificationModalData: NotificationModalData = {
   success: {
+    status: 'success',
     image: successEnvelope,
     title: 'Message Sent Successfully!',
     description:
@@ -22,6 +24,7 @@ export const notificationModalData: NotificationModalData = {
     buttonText: 'Back to Home',
   },
   error: {
+    status: 'error',
     image: errorEnvelope,
     title: 'Message failed to send.',
     description:

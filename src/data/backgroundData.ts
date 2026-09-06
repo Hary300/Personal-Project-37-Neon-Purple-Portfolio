@@ -4,6 +4,7 @@ import contactParticles from '@/assets/images/background/contactParticles.svg';
 import gridPattern from '@/assets/images/background/gridPattern.png';
 import modalGridPattern from '@/assets/images/background/modalGridPattern.png';
 import ellipse from '@/assets/images/background/ellipse.png';
+import modalParticles from '@/assets/images/background/modalParticles.png';
 
 interface BackgroundData {
   waveBackground: string;
@@ -12,6 +13,7 @@ interface BackgroundData {
   gridPattern: string;
   modalGridPattern: string;
   ellipse: string;
+  modalParticles: string;
 }
 
 export const backgroundData: BackgroundData = {
@@ -21,4 +23,5 @@ export const backgroundData: BackgroundData = {
   gridPattern,
   modalGridPattern,
   ellipse,
+  modalParticles,
 };
